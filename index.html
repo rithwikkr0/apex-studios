@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apex Studios - Premium Digital Agency specializing in high-performance web development, UI/UX design, and cloud solutions.">
+  <meta name="theme-color" content="#0b0f19">
+  <title>Apex Studios | Modern Digital Agency & Software Solutions</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Apex Studios Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16 2L2 28H10L16 16L22 28H30L16 2Z" fill="url(#brand-grad)" />
+          <path d="M16 10L9 24H14L16 19L18 24H23L16 10Z" fill="#38bdf8" />
+          <defs>
+            <linearGradient id="brand-grad" x1="2" y1="2" x2="30" y2="28" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#38bdf8" />
+              <stop offset="0.5" stop-color="#6366f1" />
+              <stop offset="1" stop-color="#a855f7" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-name">Apex<span class="gradient-text">Studios</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Items: Theme Switcher & CTA -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get Started</a>
+
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill fade-in">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Next-Gen Digital Solutions 2026</span>
+          </div>
+          <h1 class="hero-title fade-in">
+            Architecting <span class="gradient-text">Exceptional</span> Web & Digital Experiences
+          </h1>
+          <p class="hero-description fade-in">
+            We partner with visionary startups and global enterprises to engineer blazing-fast, responsive web applications, stunning design systems, and resilient cloud architectures.
+          </p>
+          <div class="hero-cta-group fade-in">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Start Your Project</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" class="btn-icon">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#portfolio" class="btn btn-outline btn-lg">
+              <span>Explore Portfolio</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics / Trust Badges -->
+          <div class="hero-metrics fade-in">
+            <div class="metric-item">
+              <span class="metric-number" data-target="150" data-suffix="+">0</span>
+              <span class="metric-label">Projects Shipped</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-target="99" data-suffix=".4%">0</span>
+              <span class="metric-label">Client Satisfaction</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-target="12" data-suffix="M+">0</span>
+              <span class="metric-label">Users Impacted</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number" data-target="24" data-suffix="/7">0</span>
+              <span class="metric-label">Support & Uptime</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-in">
+          <div class="code-card">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="card-tab-title">ApexEngine.config.ts</span>
+              <span class="card-status-badge">Live System</span>
+            </div>
+            <pre class="code-body"><code><span class="c-keyword">import</span> { <span class="c-func">createExperience</span> } <span class="c-keyword">from</span> <span class="c-string">'@apex/core'</span>;
+
+<span class="c-keyword">export const</span> <span class="c-var">modernApp</span> = <span class="c-func">createExperience</span>({
+  <span class="c-prop">performance</span>: <span class="c-string">'100/100 Lighthouse'</span>,
+  <span class="c-prop">responsive</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">security</span>: <span class="c-string">'Enterprise Grade'</span>,
+  <span class="c-prop">stack</span>: [<span class="c-string">'HTML5'</span>, <span class="c-string">'CSS3'</span>, <span class="c-string">'Vanilla JS'</span>],
+  <span class="c-func">render</span>: () => <span class="c-var">ApexStudios</span>.<span class="c-func">deliverExcellence</span>()
+});</code></pre>
+            <div class="card-floating-badge badge-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>100% Core Web Vitals</span>
+            </div>
+            <div class="card-floating-badge badge-bottom">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>Award-Winning UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Our Capabilities</span>
+          <h2 class="section-title">Engineered For <span class="gradient-text">Peak Performance</span></h2>
+          <p class="section-subtitle">From responsive frontends to scalable cloud architectures, our specialized services turn digital challenges into market leadership.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card" data-service="web-dev">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Responsive Web Apps</h3>
+            <p class="service-desc">Crafting pixel-perfect, ultra-fast web interfaces with responsive layouts that look captivating on any device.</p>
+            <ul class="service-features">
+              <li>Modern HTML5 & Clean CSS3</li>
+              <li>High-Performance Vanilla JS</li>
+              <li>Mobile-First Architecture</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="web-dev" aria-label="View Web App Details">
+              <span>Explore Details</span>
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/></svg>
+            </button>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card" data-service="uiux">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">UI/UX & Design Systems</h3>
+            <p class="service-desc">Intuitive, cohesive design systems built to elevate your user experience, increase conversion, and inspire trust.</p>
+            <ul class="service-features">
+              <li>Custom Wireframing & Prototyping</li>
+              <li>Accessibility Standards (WCAG 2.1)</li>
+              <li>Design Tokens & Pattern Libraries</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="uiux" aria-label="View UI/UX Details">
+              <span>Explore Details</span>
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/></svg>
+            </button>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card" data-service="cloud">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Cloud Infrastructure</h3>
+            <p class="service-desc">Scalable serverless environments, continuous deployment pipelines, and global CDN acceleration.</p>
+            <ul class="service-features">
+              <li>Zero-Downtime Deployments</li>
+              <li>Edge Caching & Cloudflare Integration</li>
+              <li>Automated CI/CD Pipelines</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="cloud" aria-label="View Cloud Infrastructure Details">
+              <span>Explore Details</span>
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/></svg>
+            </button>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card" data-service="performance">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="service-title">Speed & SEO Optimization</h3>
+            <p class="service-desc">Turbocharging page loads under 1 second, boosting Google rankings, and guaranteeing top performance scores.</p>
+            <ul class="service-features">
+              <li>Sub-second Time to Interactive</li>
+              <li>Schema Markup & Semantic SEO</li>
+              <li>Asset Minification & Tree-shaking</li>
+            </ul>
+            <button class="btn-text service-modal-btn" data-modal="performance" aria-label="View Performance Optimization Details">
+              <span>Explore Details</span>
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio / Work Section -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Works</span>
+          <h2 class="section-title">Recent <span class="gradient-text">Showcase Projects</span></h2>
+          <p class="section-subtitle">Explore a selection of cutting-edge solutions delivered across modern web development, branding, and enterprise tools.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-wrapper">
+          <div class="filter-controls" role="tablist" aria-label="Project filter categories">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+            <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Platforms</button>
+            <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile Apps</button>
+            <button class="filter-btn" data-filter="design" role="tab" aria-selected="false">UI/UX & Systems</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="web" data-project-id="nexus">
+            <div class="project-thumbnail nexus-thumb">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Nexus Capital Financial Dashboard" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="nexus">Preview Details</button>
+              </div>
+              <span class="project-badge">Web Platform</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-client">FinTech Global</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Nexus Capital Financial Dashboard</h3>
+              <p class="project-desc">Real-time asset management and high-frequency trading platform built with responsive data visualizers.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">JavaScript ES6</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="mobile" data-project-id="zenith">
+            <div class="project-thumbnail zenith-thumb">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Pulse Vitality Mobile Companion" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="zenith">Preview Details</button>
+              </div>
+              <span class="project-badge">Mobile App</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-client">Zenith Health</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Pulse Vitality Health & Wellness</h3>
+              <p class="project-desc">A cross-platform mobile experience monitoring biometric habits and synchronized health data.</p>
+              <div class="project-tags">
+                <span class="tag">PWA</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">Dark Mode</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="design" data-project-id="aurora">
+            <div class="project-thumbnail aurora-thumb">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Prism Enterprise Design System" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="aurora">Preview Details</button>
+              </div>
+              <span class="project-badge">UI/UX & Systems</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-client">Aurora Design Co</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Prism Enterprise Design System</h3>
+              <p class="project-desc">Over 120+ accessible UI components, standardized color scales, and typography tokens for enterprise teams.</p>
+              <div class="project-tags">
+                <span class="tag">Design Tokens</span>
+                <span class="tag">WCAG 2.1</span>
+                <span class="tag">Figma & CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="web" data-project-id="hyperion">
+            <div class="project-thumbnail hyperion-thumb">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Hyperion Intelligent Copilot" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="hyperion">Preview Details</button>
+              </div>
+              <span class="project-badge">Web Platform</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-client">Hyperion AI</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Hyperion Intelligent Copilot</h3>
+              <p class="project-desc">SaaS marketing website and interactive prompt playground with sub-second page delivery.</p>
+              <div class="project-tags">
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">WebSockets</span>
+                <span class="tag">CSS Animations</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" data-category="design" data-project-id="solaris">
+            <div class="project-thumbnail solaris-thumb">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Solaris Architectural Portfolio" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="solaris">Preview Details</button>
+              </div>
+              <span class="project-badge">UI/UX & Systems</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-client">Solaris Studio</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Solaris Architectural Portfolio</h3>
+              <p class="project-desc">Minimalist, typography-driven gallery with interactive 3D perspective shifts and fluid scroll.</p>
+              <div class="project-tags">
+                <span class="tag">Minimalist</span>
+                <span class="tag">Interactive</span>
+                <span class="tag">Editorial</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card" data-category="mobile" data-project-id="orbit">
+            <div class="project-thumbnail orbit-thumb">
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="FleetTrack Autonomous Dispatch" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-project-btn" data-project="orbit">Preview Details</button>
+              </div>
+              <span class="project-badge">Mobile App</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-client">Orbit Logistics</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">FleetTrack Autonomous Dispatch</h3>
+              <p class="project-desc">Mobile fleet dispatching portal with live geolocation mapping and driver status synchronizer.</p>
+              <div class="project-tags">
+                <span class="tag">Geolocation</span>
+                <span class="tag">Offline Support</span>
+                <span class="tag">Touch UX</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Simple, Transparent Pricing</span>
+          <h2 class="section-title">Plans Scaled For <span class="gradient-text">Your Ambition</span></h2>
+          <p class="section-subtitle">No hidden fees, no surprises. Choose the right tier for your organization or request a tailored scope.</p>
+
+          <!-- Billing Frequency Switch -->
+          <div class="billing-toggle-wrapper">
+            <span class="billing-label monthly active" id="billing-monthly-label">Monthly</span>
+            <label class="toggle-switch" for="billing-toggle">
+              <input type="checkbox" id="billing-toggle" aria-labelledby="billing-yearly-label">
+              <span class="slider"></span>
+            </label>
+            <span class="billing-label yearly" id="billing-yearly-label">
+              Annual Billing
+              <span class="discount-pill">Save 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1: Starter -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-tier-name">Starter Launch</h3>
+              <p class="pricing-tier-desc">Ideal for emerging startups and local businesses seeking a top-tier digital presence.</p>
+              <div class="price-display">
+                <span class="currency">$</span>
+                <span class="price-amount" data-monthly="999" data-yearly="799">999</span>
+                <span class="price-period">/ project</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>5 Custom Responsive Pages</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Mobile & Desktop Optimized</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Contact Form & Validation</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Basic SEO & Speed Tune-up</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>30 Days Post-Launch Support</span>
+              </li>
+            </ul>
+            <button class="btn btn-outline btn-block select-plan-btn" data-plan="Starter Launch">Select Starter Plan</button>
+          </div>
+
+          <!-- Tier 2: Professional (Featured) -->
+          <div class="pricing-card featured">
+            <div class="featured-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3 class="pricing-tier-name">Growth & Scale</h3>
+              <p class="pricing-tier-desc">Complete solution for growing companies demanding bespoke UI/UX, animations, and speed.</p>
+              <div class="price-display">
+                <span class="currency">$</span>
+                <span class="price-amount" data-monthly="2499" data-yearly="1999">2499</span>
+                <span class="price-period">/ project</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Up to 15 Responsive Pages</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Custom Micro-Interactions & Animations</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Dark / Light Mode Theme Switching</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Full Schema SEO & Analytics Setup</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>90 Days Priority Support & SLA</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary btn-block select-plan-btn" data-plan="Growth & Scale">Select Growth Plan</button>
+          </div>
+
+          <!-- Tier 3: Enterprise -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-tier-name">Enterprise Custom</h3>
+              <p class="pricing-tier-desc">Full-scale architecture, custom web applications, dedicated teams, and high-availability systems.</p>
+              <div class="price-display">
+                <span class="currency">$</span>
+                <span class="price-amount" data-monthly="4999" data-yearly="3999">4999</span>
+                <span class="price-period">/ project</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Unlimited Pages & Custom Dashboards</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Dedicated Technical Lead & PM</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Zero-Downtime Multi-Region Cloud</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>Penetration & Security Audits</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span>24/7/365 Dedicated Phone Support</span>
+              </li>
+            </ul>
+            <button class="btn btn-outline btn-block select-plan-btn" data-plan="Enterprise Custom">Contact Enterprise</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Client Testimonials</span>
+          <h2 class="section-title">Endorsed By <span class="gradient-text">Industry Leaders</span></h2>
+          <p class="section-subtitle">Discover how partnering with Apex Studios transformed speed, user experience, and revenue metrics for our clients.</p>
+        </div>
+
+        <div class="testimonials-slider-container">
+          <div class="testimonials-track" id="testimonials-track">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active">
+              <div class="testimonial-card">
+                <div class="star-rating" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Working with Apex Studios was a paradigm shift for our financial platform. They delivered a responsive, razor-sharp UI that reduced bounce rates by 42% in our first month alone."
+                </blockquote>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Sophia Kensington" class="author-avatar-img" loading="lazy">
+                  <div class="author-info">
+                    <h4 class="author-name">Sophia Kensington</h4>
+                    <p class="author-role">Chief Product Officer, Nexus Capital</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="star-rating" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Their attention to micro-interactions, responsive design across foldables and phones, and absolute dedication to sub-second load times made our product launch an unquestioned success."
+                </blockquote>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Marcus Ray" class="author-avatar-img" loading="lazy">
+                  <div class="author-info">
+                    <h4 class="author-name">Marcus Ray</h4>
+                    <p class="author-role">Founder & CEO, Zenith Health</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="star-rating" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+                <blockquote class="testimonial-quote">
+                  "The code Apex Studios wrote was so clean, modular, and well-documented that our internal engineering team was able to extend features immediately without friction. Truly world-class."
+                </blockquote>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" alt="Elena Lin" class="author-avatar-img" loading="lazy">
+                  <div class="author-info">
+                    <h4 class="author-name">Elena Lin</h4>
+                    <p class="author-role">VP of Engineering, Hyperion AI</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-arrow prev-btn" id="prev-testimonial" aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="slider-dots" id="slider-dots" role="tablist" aria-label="Testimonial slides">
+              <button class="dot-btn active" data-slide="0" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+              <button class="dot-btn" data-slide="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+              <button class="dot-btn" data-slide="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+            </div>
+            <button class="slider-arrow next-btn" id="next-testimonial" aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <span class="section-tag">Common Inquiries</span>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-subtitle">Everything you need to know about our workflow, deliverables, and service guarantees.</p>
+        </div>
+
+        <div class="accordion" id="faq-accordion">
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-ans-1" id="faq-q-1">
+              <span class="accordion-title">What is the standard turnaround time for a project?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-collapse" id="faq-ans-1" role="region" aria-labelledby="faq-q-1">
+              <div class="accordion-body">
+                Our Starter projects typically deliver in 1 to 2 weeks. Comprehensive custom platforms and enterprise designs generally range from 3 to 6 weeks, structured with transparent milestone demos every Friday.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-ans-2" id="faq-q-2">
+              <span class="accordion-title">Do your websites work seamlessly across smartphones and tablets?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-collapse" id="faq-ans-2" role="region" aria-labelledby="faq-q-2">
+              <div class="accordion-body">
+                Our team strictly designs with a mobile-first philosophy, testing on real physical iOS and Android hardware across standard, tablet, and ultra-wide desktop breakpoints before any release.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-ans-3" id="faq-q-3">
+              <span class="accordion-title">Will our website be optimized for SEO and Google Lighthouse?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-collapse" id="faq-ans-3" role="region" aria-labelledby="faq-q-3">
+              <div class="accordion-body">
+                Yes. Every project we engineer complies with semantic HTML5 standards, open-graph metadata, high contrast ratios (WCAG 2.1), optimized assets, and targets 95+ scores on Google Lighthouse.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-ans-4" id="faq-q-4">
+              <span class="accordion-title">Do you provide ongoing support after deployment?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-collapse" id="faq-ans-4" role="region" aria-labelledby="faq-q-4">
+              <div class="accordion-body">
+                Yes. All plans include 30 to 90 days of complimentary post-launch warranty support. We also provide flexible ongoing retainer options for continuous enhancements, security updates, and performance checks.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 5 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false" aria-controls="faq-ans-5" id="faq-q-5">
+              <span class="accordion-title">How do we get started with Apex Studios?</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-collapse" id="faq-ans-5" role="region" aria-labelledby="faq-q-5">
+              <div class="accordion-body">
+                Simply complete our interactive contact form below with your project goals or selected package. Our team will review your specifications and reply with an actionable project blueprint within 24 hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Exceptional</span></h2>
+          <p class="section-subtitle">Ready to bring your ideas to reality? Fill out the brief form below and our team will get back to you within 24 hours.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Information Card -->
+          <div class="contact-info-card">
+            <h3 class="info-card-title">Direct Channels</h3>
+            <p class="info-card-subtitle">Have questions or prefer direct communication? Reach us directly through our certified contact channels.</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="info-label">Direct Email</span>
+                  <a href="mailto:hello@apexstudios.dev" class="info-value">hello@apexstudios.dev</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <span class="info-label">Phone Support</span>
+                  <a href="tel:+18005550199" class="info-value">+1 (800) 555-0199</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="info-label">Global Headquarters</span>
+                  <p class="info-value">555 Innovation Way, Suite 400<br>San Francisco, CA 94107</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="operating-hours">
+              <span class="status-indicator"></span>
+              <span>Available Monday – Friday, 9am – 6pm PST</span>
+            </div>
+          </div>
+
+          <!-- Contact Form with Validation -->
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form-group" id="group-name">
+                <label for="contact-name" class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" autocomplete="name" required>
+                  <span class="input-status-icon" aria-hidden="true"></span>
+                </div>
+                <span class="form-error" id="error-name" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group" id="group-email">
+                <label for="contact-email" class="form-label">Work Email <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@company.com" autocomplete="email" required>
+                  <span class="input-status-icon" aria-hidden="true"></span>
+                </div>
+                <span class="form-error" id="error-email" aria-live="polite"></span>
+              </div>
+
+              <!-- Service / Plan Selection -->
+              <div class="form-group" id="group-service">
+                <label for="contact-service" class="form-label">Area of Interest</label>
+                <div class="input-wrapper select-wrapper">
+                  <select id="contact-service" name="service" class="form-input form-select">
+                    <option value="custom-web">Responsive Web Application</option>
+                    <option value="ui-ux">UI/UX & Design Systems</option>
+                    <option value="cloud-devops">Cloud & Infrastructure</option>
+                    <option value="Starter Launch">Starter Launch Plan ($999)</option>
+                    <option value="Growth & Scale">Growth & Scale Plan ($2,499)</option>
+                    <option value="Enterprise Custom">Enterprise Custom ($4,999)</option>
+                    <option value="consulting">General Consultation</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group" id="group-message">
+                <div class="label-row">
+                  <label for="contact-message" class="form-label">Project Details <span class="required">*</span></label>
+                  <span class="char-counter" id="char-counter"><span id="char-count">0</span> / 500</span>
+                </div>
+                <div class="input-wrapper">
+                  <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4" maxlength="500" placeholder="Tell us about your project requirements, target timeline, and goals..." required></textarea>
+                  <span class="input-status-icon" aria-hidden="true"></span>
+                </div>
+                <span class="form-error" id="error-message" aria-live="polite"></span>
+              </div>
+
+              <!-- Privacy Policy Agreement Checkbox -->
+              <div class="form-group checkbox-group" id="group-consent">
+                <label class="custom-checkbox">
+                  <input type="checkbox" id="contact-consent" name="consent" required>
+                  <span class="checkbox-indicator"></span>
+                  <span class="checkbox-text">I agree to the <a href="#privacy" class="open-privacy-link">Privacy Policy</a> and consent to being contacted regarding my inquiry.</span>
+                </label>
+                <span class="form-error" id="error-consent" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block submit-btn">
+                <span class="btn-text-content">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo" aria-label="Apex Studios">
+            <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 2L2 28H10L16 16L22 28H30L16 2Z" fill="url(#footer-grad)" />
+              <path d="M16 10L9 24H14L16 19L18 24H23L16 10Z" fill="#38bdf8" />
+              <defs>
+                <linearGradient id="footer-grad" x1="2" y1="2" x2="30" y2="28" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#38bdf8" />
+                  <stop offset="0.5" stop-color="#6366f1" />
+                  <stop offset="1" stop-color="#a855f7" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="brand-name">Apex<span class="gradient-text">Studios</span></span>
+          </a>
+          <p class="footer-tagline">
+            Engineering next-generation web applications, resilient software architectures, and human-centered digital experiences.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Dribbble">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm7.887 5.568c1.378 1.766 2.19 3.992 2.19 6.432 0 .524-.044 1.037-.123 1.539-1.92-.379-4.004-.393-6.13-.016-.073-.176-.149-.353-.229-.529-.65-1.428-1.442-2.809-2.348-4.086 2.766-1.488 4.793-2.678 6.64-3.34zm-8.868-3.418c2.464 0 4.715.897 6.452 2.39-1.745.642-3.714 1.79-6.398 3.23-1.328-2.316-2.5-4.225-3.376-5.46 1.05-.105 2.18-.16 3.322-.16zm-5.41 1.71c.884 1.253 2.052 3.161 3.376 5.474-3.69 1.152-7.394 1.235-7.794 1.242.456-2.827 2.062-5.26 4.418-6.716zm-3.689 8.14c.48-.008 3.666-.08 7.08-1.077.58 1.205 1.096 2.45 1.538 3.705-4.436 1.344-7.98 4.385-8.328 4.693-.574-1.254-.89-2.65-.89-4.121 0-1.127.185-2.211.6-3.2zm2.08 9.387c.29-.264 3.48-3.02 7.732-4.254.897 2.344 1.547 4.796 1.91 7.242-2.14 1.25-4.636 1.968-7.302 1.968-1.03 0-2.02-.108-2.34-.956zm11.393-.163c-.347-2.308-.96-4.62-1.808-6.84 1.944-.336 3.82-.32 5.568.016-.27 2.756-1.597 5.176-3.76 6.824z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="service-quick-link" data-service="web-dev">Web Applications</a></li>
+            <li><a href="#services" class="service-quick-link" data-service="uiux">UI/UX Systems</a></li>
+            <li><a href="#services" class="service-quick-link" data-service="cloud">Cloud Architecture</a></li>
+            <li><a href="#services" class="service-quick-link" data-service="performance">Speed Optimization</a></li>
+            <li><a href="#pricing">Enterprise Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription Column -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Stay Informed</h4>
+          <p class="newsletter-desc">Subscribe to our monthly engineering bulletin covering web performance and UI innovations.</p>
+          <form id="newsletter-form" class="newsletter-form" novalidate>
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Enter your work email" required aria-label="Work email address">
+              <button type="submit" class="btn btn-primary newsletter-submit" aria-label="Subscribe to newsletter">
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </button>
+            </div>
+            <span class="newsletter-status" id="newsletter-status" aria-live="polite"></span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <p>&copy; <span id="current-year">2026</span> Apex Studios Inc. All rights reserved. Crafted with clean HTML5, CSS3, and JavaScript.</p>
+        </div>
+        <div class="footer-legal-links">
+          <button class="text-link modal-trigger" data-modal="privacy">Privacy Policy</button>
+          <span class="bullet-dot">•</span>
+          <button class="text-link modal-trigger" data-modal="terms">Terms of Service</button>
+          <span class="bullet-dot">•</span>
+          <button class="text-link modal-trigger" data-modal="security">Security Statement</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top of page" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive Project Preview Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close project preview modal">&times;</button>
+      <div class="modal-body" id="modal-project-content">
+        <!-- Injected via JavaScript dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Info Modal (Privacy, Terms, Service details) -->
+  <div class="modal-backdrop" id="info-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-info-title">
+    <div class="modal-card info-modal-card">
+      <button class="modal-close-btn" id="info-modal-close" aria-label="Close modal window">&times;</button>
+      <div class="modal-body" id="info-modal-content">
+        <!-- Injected via JavaScript dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="assertive"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
